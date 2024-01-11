@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ccc;
+}
+
+.group {
+  width: 90vw;
+}
+
+.item {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  flex: 0.5;
+  margin: 10px;
+  transition: all 0.9s;
+}
+
+.item image {
+  height: 90%;
+}
+
+.item.active {
+  flex: 10;
+}
+
+.item.active h2 {
+  opacity: 1 !important;
+  transition: opacity 0.5s ease-in 0.3s;
+}
+
+.item h2 {
+  font-size: 24px;
+  bottom: 20px;
+  left: 20px;
+}
